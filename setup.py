@@ -17,7 +17,7 @@ setuptools.setup(
     install_requires=['numpy', 'Pillow>=7.1.2'],
     include_dirs=[np.get_include()],
     packages=['superxbr'],
-    entry_points={'console_scripts': ['superxbr = superxbr.cli:main']},
+    entry_points={'console_scripts': ['superxbr = superxbr.__main__:main']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

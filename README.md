@@ -15,13 +15,15 @@ Misery (Cave Story) scaled 4x ([Image source](https://www.spriters-resource.com/
 
 ## Requirements
 
-Python 3.6 or later (any OS)
+Python 3.6 or later. This was tested on Windows and Linux, but should also work on macOS.
 
 ## Installation
 
-This can be installed using pip:
+This isn't uploaded to PyPI yet, so you'll have to build and install this from source.
 
-    python3 -m pip install py-super-xbr
+1. Clone this repository to your system
+2. Open a terminal and go to the repository's directory
+3. Run `pip install .`
 
 ## Usage
 
@@ -29,7 +31,9 @@ This can be installed using pip:
 
 Applies the Super-xBR upscale filter to the image `INPUT` and saves it to `OUTPUT`:
 
-    superxbr [OPTIONS] INPUT OUTPUT
+```commandline
+superxbr [OPTIONS] INPUT OUTPUT
+```
 
 ##### Options
 
@@ -72,7 +76,7 @@ im_scaled_8x = superxbr.scale(im, 3)
 
 Install required packages:
 
-    python3 -m pip install -r requirements.txt
+    pip install -r requirements.txt
 
 [superxbr.c](superxbr/superxbr.c) needs to be regenerated if [superxbr.pyx](superxbr/superxbr.pyx) is modified:
 
